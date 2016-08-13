@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>MY APP</title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/styles.css" />
+  
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <!-- Modal Trigger -->
+
+     <div class="container">
+          <div class="col s12 m6 z-depth-4 infobox">
+
+         <h4>NMKSV 10v</h4>
+            Vuosijuhlat xx-xx.10.2016 Paikassa Viuhvauh <br \>    
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed posuere interdum sem. Quisque ligula eros ullamcorper quis, lacinia quis facilisis sed sapien. Mauris varius diam vit    ae    arcu. Sed arcu lectus auctor vitae, consectetuer et venenatis eget velit. Sed augue orci, lacinia eu tincidunt et eleifend nec lacus. Donec ultricies nisl ut felis, suspendisse poten  ti.    Lorem ipsum ligula ut hendrerit mollis, ipsum erat vehicula risus, eu suscipit sem libero nec erat. Aliquam erat volutpat. Sed congue augue vitae neque. Nulla consectetuer porttitor   pede. Fusce purus morbi tortor magna condimentum vel, placerat id blandit sit amet tortor.</p><br />
+            <a class="modal-trigger waves-effect waves-light btn right" data-target="ilmo">ILMOITTAUDU</a>
+        </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="ilmo" class="modal modal-fixed-footer">
+      <form action="/ilmoittaudu" method="POST">
+        <div class="modal-content">
+          <h4>Ilmoittautuminen</h4>
+          <div class="row">
+            <div class="input-field col s6">
+              <input type="text" name="name" class="validate">
+              <label for="name">NIMI</label>
+            </div>
+            <div class="input-field col s6">
+              <input type="text" name="pelinimi">
+              <label for="pelinimi">PELINIMI & NUMERO</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <input type="email" name="email" class="validate">
+              <label for="email" data-error="wrong" data-success="right">SÄHKÖPOSTIOSOITE</label>
+            </div>
+            <div class="input-field col s6">
+              <input type="text" name="avec">
+              <label for="avec">AVEC (käske avecin ilmoittautua erikseen)</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input type="text" name="allergiat">
+              <label for="allergiat">ALLERGIAT ja ruokavammat</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <select>
+                <option value="valkoviini">Valkoinen</option>
+                <option value="punaviini">Punainen</option>
+              </select>
+              <label for="viini">VIINI</label>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn red">Peruuta</a>
+          <button class="btn waves-effect waves-light green" type="submit" name="action">Ilmoittaudu</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+

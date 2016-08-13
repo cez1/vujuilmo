@@ -1,0 +1,16 @@
+.infobox {
+	position: absolute;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	margin: auto;
+	max-width: 800px;
+     left: 10%;
+     top: 25%;
+     -moz-transform: translate(-25%, -25%)
+     -webkit-transform: translate(-25%, -25%)
+     -ms-transform: translate(-25%, -25%)
+     -o-transform: translate(-25%, -25%)
+     transform: translate(-25%, -25%);
+}

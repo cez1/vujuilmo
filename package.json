@@ -1,0 +1,30 @@
+{
+  "name": "nmksv10",
+  "version": "1.0.0",
+  "description": "NMKSV ILMOKILKE",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "null"
+  },
+  "keywords": [
+    "nmksv",
+    "ilmo",
+    "kilke",
+    "rokrok"
+  ],
+  "author": "cez",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongodb": "^2.2.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.10.0"
+  }
+}

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>MY APP</title>
+    <title>NMKSV 10v</title>
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -17,14 +17,39 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
+
+        <!-- background -->
+    <section >
+      <div class="video-bg">
+          <video class="fade-in-video" autoplay muted>
+              <source src="videos/background.webm" type="video/webm">
+              <source src="videos/background.ogg" type="video/ogg">
+              <source src="videos/background.mp4" type="video/mp4">
+          </video>
+      </div>
+      <div class="video-overlay"></div>
+      <div>
+
     <!-- Modal Trigger -->
-
      <div class="container">
-          <div class="col s12 m6 z-depth-4 infobox">
+          <div class="col s12 m6 z-depth-4 infobox teal lighten-5">
+         <h3>Juujaa!</h3>
+            <p class="flow-text">Vetreä ja ennakkoluuloton urrrheilujoukkueemme on taistellut isompien liigoissa jo kymmenen täyden vuoden ajan, tätä sopii juhlistaa isosti ja mainiossa porukassa!</p>
+            <p>Juhlat alkavat <b>lauantaina 15.10. klo 13.00 TTY:n obeliskin välittömästä läheisyydestä</b>. Tästä aloitamme jo perinteiseksi muodostuneilla kiveslyNpialaisilla, joiden päätteeksi löydämme itsemme iltapäivän lopuksi majoitustiloista. Itse pöytäjuhla alkaa klo 19.00, jossa pukukoodina on tumma puku. Pöytäjuhlan ja jatkojen jälkeen jatkamme jatkojen jatkoilla aamuun asti, jonka jälkeen otamme vartin torkut. Pienten kauneusunien jälkeen heräämme viettämään brunssia, josta lopulta iltapäivän tietämillä löydämme itsemme jälleen obeliskin välittömästä läheisyydestä.</p>
+            <section>
+             <b>Koska juhliin kuuluu muutakin, kuin vain pöytäjuhlat, ei pelkällä taskumatilla pärjää koko aikaa. Mukaan tarvitset ainakin:</b>
+             <ul>
+              <li>- ulkoiluasun (lokakuun puolivälissä keli voi olla mitä tahansa)</li>
+              <li>- juhla-asun (laittautumiseen varataan aikaa parahultaisesti)</li>
+              <li>- saunomis- ja paljuiluvälineet</li>
+              <li>- yöpymisvälineet (makuupussin, ehkä deluxe ETYK-setin, eli en-tule-yöksi-kotiin-varustus hieman laajennettuna)</li>
+              <li>- mahdollista urrrheilujuomaa lauantaipäivän olynpialaisia varten (muuten juomat kuuluvat lipun hintaan, ja lisää voi voittaa paikan päällä!)</li>
+              <li>- kosolti urrrheiluhenkeä, sillä näissä juhlissa ei pönötetä! Ainakaan jos ei halua.</li>
+            </ul>
+           </section><br />
+           <p>Koko juhlallisuuksien hinta on <b>69 euroa</b>, sisältäen lähes kaiken mitä juhlilta voit toivoa.</p>
+           <p>Jos ilmoittautumisen jälkeen jää jotain kysyttävää, kysymyksiä voi laittaa osoitteeseen <b>vuju@nmksv.org</b></p> <br /><br />
 
-         <h4>NMKSV 10v</h4>
-            Vuosijuhlat xx-xx.10.2016 Paikassa Viuhvauh <br \>    
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed posuere interdum sem. Quisque ligula eros ullamcorper quis, lacinia quis facilisis sed sapien. Mauris varius diam vit    ae    arcu. Sed arcu lectus auctor vitae, consectetuer et venenatis eget velit. Sed augue orci, lacinia eu tincidunt et eleifend nec lacus. Donec ultricies nisl ut felis, suspendisse poten  ti.    Lorem ipsum ligula ut hendrerit mollis, ipsum erat vehicula risus, eu suscipit sem libero nec erat. Aliquam erat volutpat. Sed congue augue vitae neque. Nulla consectetuer porttitor   pede. Fusce purus morbi tortor magna condimentum vel, placerat id blandit sit amet tortor.</p><br />
             <a class="modal-trigger waves-effect waves-light btn right" data-target="ilmo">ILMOITTAUDU</a>
         </div>
     </div>
@@ -36,46 +61,206 @@
           <h4>Ilmoittautuminen</h4>
           <div class="row">
             <div class="input-field col s6">
-              <input type="text" name="name" class="validate">
+              <input type="text" name="name" class="validate" />
               <label for="name">NIMI</label>
             </div>
             <div class="input-field col s6">
-              <input type="text" name="pelinimi">
-              <label for="pelinimi">PELINIMI & NUMERO</label>
+              <input type="text" name="pelinimi" />
+              <label for="pelinimi">GSM</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s6">
-              <input type="email" name="email" class="validate">
+              <input type="email" name="email" class="validate" />
               <label for="email" data-error="wrong" data-success="right">SÄHKÖPOSTIOSOITE</label>
             </div>
             <div class="input-field col s6">
-              <input type="text" name="avec">
-              <label for="avec">AVEC (käske avecin ilmoittautua erikseen)</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <input type="text" name="allergiat">
-              <label for="allergiat">ALLERGIAT ja ruokavammat</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <select>
+              <select name="viini">
+                <option value="" disabled selected>Valitse viini</option>
                 <option value="valkoviini">Valkoinen</option>
                 <option value="punaviini">Punainen</option>
               </select>
               <label for="viini">VIINI</label>
             </div>
           </div>
-        </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <select name="ruoka">
+                <option value="" disabled selected>Valitse ruokavalio</option>
+                <option value="liharuoka">Liha</option>
+                <option value="kasvisruoka">Kasvis</option>
+              </select>
+              <label for="ruoka">RUOKA</label>
+            </div>
+            <div class="input-field col s6">
+              <input type="text" name="allergiat" />
+              <label for="allergiat">ALLERGIAT ja ruokavammat</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <input type="text" name="edustus" />
+              <label for="edustus">EDUSTAMASI TAHO</label>
+            </div>
+            <div class="input-field col s6">
+              <input type="checkbox" id="lahja" />
+              <label for="lahja">Tahdon luovuttaa lahjan</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input type="text" name="unitoive" />
+              <label for="unitoive">TOIVEET YÖPYMISSEURASTA</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <input type="checkbox" id="avec" />
+              <label for="avec">Minulla on avec</label>
+            </div>
+            <div class="input-field col s6">
+              <input type="checkbox" id="ilmanavec" />
+              <label for="ilmanavec">Tarvitsen avecin, kiitos</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input type="text" name="lisätiedot" />
+              <label for="lisätiedot">LISÄTIEDOT JA TERKUT JÄRJESTÄJILLE</label>
+            </div>
+          </div>
+          <div id="avec-ilmo" style='display:none'>
+            <label>AVECIN TIEDOT</label>
+            <div class="row">
+              <div class="input-field col s6">
+                <input type="text" name="avec-name" class="validate" />
+                <label for="avec-name">NIMI</label>
+              </div>
+              <div class="input-field col s6">
+                <input type="text" name="avec-puhelin" />
+                <label for="avec-puhelin">GSM</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <input type="email" name="avec-email" class="validate" />
+                <label for="avec-email" data-error="wrong" data-success="right">SÄHKÖPOSTIOSOITE</label>
+              </div>
+              <div class="input-field col s6">
+                <select name="avec-viini">
+                  <option value="" disabled selected>Valitse viini</option>
+                  <option value="valkoviini">Valkoinen</option>
+                  <option value="punaviini">Punainen</option>
+                </select>
+                <label for="avec-viini">VIINI</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <select name="avec-ruoka">
+                  <option value="" disabled selected>Valitse ruokavalio</option>
+                  <option value="liharuoka">Liha</option>
+                  <option value="kasvisruoka">Kasvis</option>
+                </select>
+                <label for="avec-ruoka">RUOKA</label>
+              </div>
+              <div class="input-field col s6">
+                <input type="text" name="avec-allergiat" />
+                <label for="avec-allergiat">ALLERGIAT ja ruokavammat</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <input type="text" name="avec-edustus" />
+                <label for="avec-edustus">EDUSTAMASI TAHO</label>
+              </div>
+              <div class="input-field col s6">
+                <input type="checkbox" id="avec-lahja" />
+                <label for="avec-lahja">Tahdon luovuttaa lahjan</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <input type="checkbox" id="meikätarjoo" />
+                <label for="meikätarjoo">Maksan myös avecin juhlat</label>
+              </div>
+            </div>
+          </div>
+          <div id="avec-rekry" style='display:none'>
+            <label>AVECIN TOIVOTUT OMINAISUUDET</label>
+            <div class="row">
+              <div class="input-field col s6">
+                <select name="hiukset">
+                  <option value="" disabled selected>Valitse hiusten tyyli</option>
+                  <optgroup label="Lyhyet">
+                    <option value="lyhyet-vaaleat">Vaaleat</option>
+                    <option value="lyhyet-tummat">Tummat</option>
+                  </optgroup>
+                  <optgroup label="Pitkät">
+                    <option value="lyhyet-vaaleat">Vaaleat</option>
+                    <option value="lyhyet-tummat">Tummat</option>
+                  </optgroup>
+                  <option value="natsi">Natsi</option>
+                </select>
+                <label for="hiukset">HIUKSET</label>
+              </div>
+              <div class="input-field col s6">
+                <select name="kroppa">
+                  <option value="" disabled selected>Valitse kroppa</option>
+                  <option value="pitkä">Pitkä</option>
+                  <option value="pätkä">Pätkä</option>
+                  <option value="tymäkkä">Tymäkkä</option>
+                  <option value="orava">Orava</option>
+                </select>
+                <label for="kroppa">KROPPA</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <input name="lusikka" class="with-gap" type="radio" id="pikkuinen">
+                <label for="pikkuinen">Pieni lusikka</label>
+              </div>
+              <div class="input-field col s6">
+                <input name="lusikka" class="with-gap" type="radio" id="isompi">
+                <label for="isompi">Iso lusikka</label> 
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <input name="snaps" class="with-gap" type="radio" id="jallu">
+                <label for="jallu">Jaloviina</label>
+              </div>
+              <div class="input-field col s6">
+                <input name="snaps" class="with-gap" type="radio" id="likööri">
+                <label for="likööri">Likööri</label> 
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <input name="tilanne" class="with-gap" type="radio" id="sinkku">
+                <label for="sinkku">Sinkku</label>
+              </div>
+              <div class="input-field col s6">
+                <input name="tilanne" class="with-gap" type="radio" id="haaste">
+                <label for="haaste">Vähän haastavampi</label> 
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input type="text" name="vapaasana">
+                <label for="vapaasana">Muut toiveet ja vaatimukset</label>
+              </div> 
+            </div>
+          </div>
+        </div> 
         <div class="modal-footer">
           <a href="#!" class=" modal-action modal-close waves-effect waves-green btn red">Peruuta</a>
           <button class="btn waves-effect waves-light green" type="submit" name="action">Ilmoittaudu</button>
         </div>
       </form>
     </div>
+      </div>
+    </section>
   </body>
 </html>
 

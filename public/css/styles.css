@@ -1,4 +1,5 @@
 .infobox {
+	background.color: white;
 	position: absolute;
 	padding-left: 25px;
 	padding-right: 25px;
@@ -7,7 +8,63 @@
 	margin: auto;
 	max-width: 800px;
      left: 10%;
-     top: 25%;
+     top: 10%;
+     -moz-transform: translate(-25%, -25%)
+     -webkit-transform: translate(-25%, -25%)
+     -ms-transform: translate(-25%, -25%)
+     -o-transform: translate(-25%, -25%)
+     transform: translate(-25%, -25%);
+}
+.video-bg,
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+}
+.video-overlay {
+    pointer-events: none; /* Allows right clicking on the video to pause etc */
+}
+.video-bg video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.fade-in-video {
+    opacity: 0
+    transition: opacity 1 linear;
+}
+
+.modal { 
+    max-width: 75% !important; 
+    max-height: 100% !important;
+    overflow-y: hidden !important ;
+} 
+
+#logo {
+  width: 50%;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.kiitosbox {
+	position:absolute;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	margin: auto;
+	max-width: 60%;
+     left: 20%;
+     top: 20%;
      -moz-transform: translate(-25%, -25%)
      -webkit-transform: translate(-25%, -25%)
      -ms-transform: translate(-25%, -25%)
